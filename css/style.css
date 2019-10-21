@@ -1,0 +1,22 @@
+/* UNIVERAL VARIABLES AND HELPER STYLES */
+
+:root {
+  --main-bg-color: #7dc2ad;
+  --main-txt-color: white;
+  --main-titles: 'Anton', sans-serif;
+  --main-text: 'Poppins', sans-serif;
+}
+
+/* * {
+    outline: 2px solid gold;
+} */
+
+header {width: 80vw; text-align: center; margin: 30px auto;}
+
+img { width: 10vw; display: block; margin: 10px auto; border: 5px solid black; border-radius: 40%;}
+
+body { font-size: 62.5%; }
+
+main {width: 80vw; margin: 10px auto;}
+
+/* PROJECT SPECIFIC STYLES */
