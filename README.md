@@ -1,10 +1,10 @@
-# NAME OF PROJECT
+# Alex Merced's Dev Blog
 ## By Author
-### [LIVE PROJECT](https://www.AlexMercedCoder.com)
+### [LIVE PROJECT](https://alexmercedcoder.github.io/alexmerceddevblog/)
 ### [Portfolio Website](https://www.AlexMercedCoder.com)
 ---
 **SUMMARY** :
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This is my blog as a developer. Content created using the contentful headless CMS, deployed using github pages. I also used the NES.CSS library for styling. The goal is to post thoughts as a developer. I'll also be using the wiki to document code strategies I use to solve common issues.
 ---
 ## Resources Used
 
@@ -12,21 +12,34 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 - jquery UI
 - Google Fonts (Font A, Font B)
 - Other CSS and JS Libraries
+- NES.CSS
 
 ## Design of Functionality
 
 Explanation of my code
 
 ```
-CODE TO BE EXPLAINED
+.then ((data) => {
+
+    let theinfo = data;
+    console.log(theinfo.items[0].fields.blogTitle);
+    theinfo.items.map((author) => {
+
+    $blogContent = $('<div>'),
+    $blogContent.html(`
+
+        <div class="nes-container with-title is-centered">
+        <p class="title">${author.fields.blogTitle}</p>
+        <p>${author.fields.blogContent}</p>
+        </div>
+
+        `);
+    $('main').append($blogContent);
+
 ```
-
-
+Nothing super crazy. I use the contentful API to pull the blog data then  map it to a div with a block of html.
 
 ## Other Comments
-
-- I had these problems that I had to work around
-- I wanted to add these features but couldn't because
 
 
 <!-- Image Tag: ![alt text](image.jpg) -->
