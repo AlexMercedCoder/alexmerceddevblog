@@ -79,7 +79,7 @@ fetch('https://cdn.contentful.com/spaces/wiothdq64tqj/environments/master/entrie
 
       let theinfo = data;
       console.log(theinfo.items[0].fields.blogTitle);
-      theinfo.items.map((author) => {
+      theinfo.items.reverse().map((author) => {
 
       $blogContent = $('<div>'),
       $blogContent.html(`
